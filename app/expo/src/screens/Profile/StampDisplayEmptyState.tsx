@@ -1,12 +1,12 @@
-import React from "react";
-import { Text, View } from "react-native";
-import { Image } from "expo-image";
+import React from 'react';
+import { Text, View } from 'react-native';
+import { Image } from 'expo-image';
 
 export default function StampDisplayEmptyState() {
   return (
     <View className="h-56 w-[360] items-center rounded-2xl bg-gray-100 p-10">
       <Image
-        source={require("../../../assets/images/stamp.png")}
+        source={require('../../../assets/images/stamp.png')}
         contentFit="scale-down"
         className="-mt-2 h-16 w-80"
       />

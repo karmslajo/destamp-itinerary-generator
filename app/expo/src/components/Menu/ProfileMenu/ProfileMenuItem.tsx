@@ -1,7 +1,8 @@
-import { Text, TouchableOpacity, View } from "react-native";
+import type { ReactNode } from 'react';
+import { Text, TouchableOpacity, View } from 'react-native';
 
 interface ProfileMenu {
-  icon: any;
+  icon: ReactNode;
   title: string;
   color: string;
 }

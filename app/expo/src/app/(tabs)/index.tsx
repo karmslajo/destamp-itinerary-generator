@@ -1,14 +1,14 @@
-import React from "react";
+import React from 'react';
 import {
   FlatList,
   Text,
   View,
-} from "react-native";
-import { gql, useQuery } from "@apollo/client";
-import AbsoluteButton from "~/components/Button/AbsoluteButton";
-import TripCard from "~/components/Card/TripCard";
-import { GetAllTripsDocument } from "~/graphql/generated";
-import MyTripEmptyState from "~/screens/MyTrip/EmptyState";
+} from 'react-native';
+import { gql, useQuery } from '@apollo/client';
+import AbsoluteButton from '~/components/Button/AbsoluteButton';
+import TripCard from '~/components/Card/TripCard';
+import { GetAllTripsDocument } from '~/graphql/generated';
+import MyTripEmptyState from '~/screens/MyTrip/EmptyState';
 
 export const GetAllTripsQuery = gql(
   `query GetAllTrips {
@@ -35,7 +35,7 @@ export default function MyTripScreen() {
 
   if (error) return <Text>{`Error! ${error}`}</Text>;
 
-  if (loading) return <Text>{"Loading..."}</Text>;
+  if (loading) return <Text>{'Loading...'}</Text>;
 
   if (data?.trips.length === 0) {
     return <MyTripEmptyState />;

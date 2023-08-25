@@ -78,6 +78,7 @@
     "extends": [
       "@destamp/eslint-config/base",
       "@destamp/eslint-config/react"
-    ]
+    ], 
+    "ignorePatterns": ["/src/graphql/generated.tsx"]
   }
 }

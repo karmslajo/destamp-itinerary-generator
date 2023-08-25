@@ -6,7 +6,7 @@ import { SplashScreen, Stack } from 'expo-router';
 import { useEffect } from 'react';
 import { useColorScheme } from 'react-native';
 import { ApolloClient, ApolloProvider, createHttpLink, InMemoryCache } from '@apollo/client';
-import { fetch } from 'cross-fetch'
+import { fetch } from 'cross-fetch';
 
 export {
   // Catch any errors thrown by the Layout component.
