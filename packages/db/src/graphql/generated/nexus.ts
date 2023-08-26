@@ -4,7 +4,7 @@
  */
 
 
-import type { Context } from "./../../context"
+import type { Context } from "./../context"
 import type { ValidateResolver } from "nexus-validate"
 import type { core } from "nexus"
 declare global {
@@ -57,7 +57,7 @@ export interface NexusGenScalars {
 export interface NexusGenObjects {
   Destination: { // root type
     createdAt: NexusGenScalars['DateTime']; // DateTime!
-    id: string; // ID!
+    id: number; // Int!
     name: string; // String!
     updatedAt: NexusGenScalars['DateTime']; // DateTime!
   }
@@ -76,7 +76,7 @@ export interface NexusGenObjects {
     childCount: number; // Int!
     createdAt: NexusGenScalars['DateTime']; // DateTime!
     endDate: NexusGenScalars['DateTime']; // DateTime!
-    id: string; // ID!
+    id: number; // Int!
     startDate: NexusGenScalars['DateTime']; // DateTime!
     title: string; // String!
     travelSize: NexusGenEnums['TravelSize']; // TravelSize!
@@ -97,7 +97,7 @@ export type NexusGenAllTypes = NexusGenRootTypes & NexusGenScalars & NexusGenEnu
 export interface NexusGenFieldTypes {
   Destination: { // field return type
     createdAt: NexusGenScalars['DateTime']; // DateTime!
-    id: string; // ID!
+    id: number; // Int!
     image: NexusGenRootTypes['Image']; // Image!
     name: string; // String!
     updatedAt: NexusGenScalars['DateTime']; // DateTime!
@@ -120,7 +120,7 @@ export interface NexusGenFieldTypes {
     createdAt: NexusGenScalars['DateTime']; // DateTime!
     destination: NexusGenRootTypes['Destination']; // Destination!
     endDate: NexusGenScalars['DateTime']; // DateTime!
-    id: string; // ID!
+    id: number; // Int!
     startDate: NexusGenScalars['DateTime']; // DateTime!
     title: string; // String!
     travelSize: NexusGenEnums['TravelSize']; // TravelSize!
@@ -131,7 +131,7 @@ export interface NexusGenFieldTypes {
 export interface NexusGenFieldTypeNames {
   Destination: { // field return type name
     createdAt: 'DateTime'
-    id: 'ID'
+    id: 'Int'
     image: 'Image'
     name: 'String'
     updatedAt: 'DateTime'
@@ -154,7 +154,7 @@ export interface NexusGenFieldTypeNames {
     createdAt: 'DateTime'
     destination: 'Destination'
     endDate: 'DateTime'
-    id: 'ID'
+    id: 'Int'
     startDate: 'DateTime'
     title: 'String'
     travelSize: 'TravelSize'
