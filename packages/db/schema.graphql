@@ -14,7 +14,7 @@ scalar DateTime
 
 type Destination {
   createdAt: DateTime!
-  id: ID!
+  id: Int!
   image: Image!
   name: String!
   updatedAt: DateTime!
@@ -47,7 +47,7 @@ type Trip {
   createdAt: DateTime!
   destination: Destination!
   endDate: DateTime!
-  id: ID!
+  id: Int!
   startDate: DateTime!
   title: String!
   travelSize: TravelSize!
