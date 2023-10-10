@@ -24,8 +24,12 @@ export {
   ErrorBoundary,
 } from 'expo-router';
 
+
 const LOCAL_SYSTEM_IP_ADDRESS = '10.10.10.99'; // change this with your own ip address
 const PORT = 4000;
+
+const URL = 'http://192.168.254.135:4000';
+
 
 const devUrl = `http://${LOCAL_SYSTEM_IP_ADDRESS}:${PORT}/graphql`;
 const prodUrl = 'https://destamp-cpu.onrender.com/graphql';
@@ -33,6 +37,7 @@ const prodUrl = 'https://destamp-cpu.onrender.com/graphql';
 const client = new ApolloClient({
   link: createHttpLink({
     uri: devUrl,
+    uri: `${URL}/graphql`,
     fetch,
   }),
   cache: new InMemoryCache({
